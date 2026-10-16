@@ -1,0 +1,8 @@
+[
+  {
+    "id": "nt_001",
+    "problem": "Prove that if n is an odd integer, then 8 divides n^2 - 1.",
+    "solution": "Since n is odd, we can write n = 2k + 1 for some integer k. Then n^2 - 1 = (2k + 1)^2 - 1 = 4k^2 + 4k = 4k(k + 1). The integers k and k + 1 are consecutive, so one of them is even. Therefore, k(k + 1) is divisible by 2, which means 4k(k + 1) is divisible by 8. Hence, 8 divides n^2 - 1.",
+    "answer": "8 | (n^2 - 1)"
+  }
+]
