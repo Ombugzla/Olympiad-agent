@@ -1,0 +1,20 @@
+[
+  {
+    "id": "test_nt_001",
+    "problem": "Prove that n^3 - n is divisible by 6 for every integer n.",
+    "solution": "Factor n^3 - n = n(n - 1)(n + 1). These are three consecutive integers. At least one is divisible by 3, and at least one is even. Therefore their product is divisible by both 2 and 3, hence by 6.",
+    "answer": "6 | (n^3 - n)"
+  },
+  {
+    "id": "test_alg_001",
+    "problem": "Prove that x^2 + y^2 >= 2xy for all real numbers x and y.",
+    "solution": "Since the square of every real number is nonnegative, (x - y)^2 >= 0. Expanding gives x^2 - 2xy + y^2 >= 0. Rearranging yields x^2 + y^2 >= 2xy.",
+    "answer": "x^2 + y^2 >= 2xy"
+  },
+  {
+    "id": "test_com_001",
+    "problem": "Prove that among any 13 integers, there are two whose difference is divisible by 12.",
+    "solution": "Every integer has one of 12 possible remainders upon division by 12: 0, 1, ..., 11. If no two of the 13 integers had the same remainder, there could be at most 12 integers. Since there are 13 integers but only 12 possible remainders, the pigeonhole principle guarantees that two have the same remainder. Their difference is therefore divisible by 12.",
+    "answer": "There exist two distinct integers a and b among the 13 integers such that 12 divides a - b."
+  }
+]
