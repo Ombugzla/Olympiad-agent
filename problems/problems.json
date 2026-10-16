@@ -2,7 +2,25 @@
   {
     "id": "nt_001",
     "problem": "Prove that if n is an odd integer, then 8 divides n^2 - 1.",
-    "solution": "Since n is odd, we can write n = 2k + 1 for some integer k. Then n^2 - 1 = (2k + 1)^2 - 1 = 4k^2 + 4k = 4k(k + 1). The integers k and k + 1 are consecutive, so one of them is even. Therefore, k(k + 1) is divisible by 2, which means 4k(k + 1) is divisible by 8. Hence, 8 divides n^2 - 1.",
+    "solution": "Since n is odd, write n = 2k + 1 for some integer k. Then n^2 - 1 = (2k + 1)^2 - 1 = 4k(k + 1). Since k and k + 1 are consecutive integers, one is even. Hence 2 divides k(k + 1), so 8 divides 4k(k + 1) = n^2 - 1.",
     "answer": "8 | (n^2 - 1)"
+  },
+  {
+    "id": "nt_002",
+    "problem": "Prove that if p is a prime greater than 3, then 24 divides p^2 - 1.",
+    "solution": "Since p is a prime greater than 3, p is odd and is not divisible by 3. Write p = 2k + 1. Then p^2 - 1 = 4k(k + 1), which is divisible by 8 because k and k + 1 are consecutive integers. Also, p is not divisible by 3, so p has remainder 1 or 2 upon division by 3. In either case, p^2 has remainder 1 upon division by 3. Thus 3 divides p^2 - 1. Since 3 and 8 are coprime and both divide p^2 - 1, their product 24 divides p^2 - 1.",
+    "answer": "24 | (p^2 - 1)"
+  },
+  {
+    "id": "alg_001",
+    "problem": "For positive real numbers x and y, prove that x + y >= 2 sqrt(xy).",
+    "solution": "Since x and y are positive, their square roots are real. The square of a real number is nonnegative, so (sqrt(x) - sqrt(y))^2 >= 0. Expanding gives x - 2 sqrt(xy) + y >= 0. Rearranging yields x + y >= 2 sqrt(xy), as required. Equality holds if and only if x = y.",
+    "answer": "x + y >= 2 sqrt(xy), with equality if and only if x = y."
+  },
+  {
+    "id": "com_001",
+    "problem": "Prove that in any finite undirected graph, the number of vertices with odd degree is even.",
+    "solution": "The sum of the degrees of all vertices equals twice the number of edges, because each edge contributes one to the degree of each of its two endpoints. Therefore, the sum of all vertex degrees is even. The sum of the even degrees is even, so the sum of the odd degrees must also be even. A sum of odd integers is even only when there are an even number of terms. Hence, the number of vertices with odd degree is even.",
+    "answer": "Every finite undirected graph has an even number of vertices of odd degree."
   }
 ]
